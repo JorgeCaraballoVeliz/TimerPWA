@@ -1,43 +1,22 @@
 {
-  "name": "host",
+  "name": "material_problema",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "build:start": "cd dist && PORT=8080 npx serve",
-    "start": "http-server -c-1 dist",
-    "start:live": "webpack serve --open --mode development --live-reload --hot"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"wsrun --parallel start\""
   },
-  "license": "MIT",
-  "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
-  },
+  
+
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/plugin-transform-runtime": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "autoprefixer": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "copy-webpack-plugin": "^12.0.2",
-    "css-loader": "^6.10.0",
-    "dotenv-webpack": "^8.0.1",
-    "file-loader": "^6.2.0",
-    "html-loader": "^5.0.0",
-    "html-webpack-plugin": "^5.3.2",
-    "http-server": "^14.1.1",
-    "mini-css-extract-plugin": "^2.8.1",
-    "postcss": "^8.2.1",
-    "postcss-loader": "^4.1.0",
-    "sass": "^1.72.0",
-    "sass-loader": "^14.1.1",
-    "style-loader": "^3.3.4",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.57.1",
-    "webpack-cli": "^4.9.0",
-    "webpack-dev-server": "^4.3.1"
+    "concurrently": "^8.2.2",
+    "wsrun": "^5.2.4"
   },
   "dependencies": {
-    "@babel/runtime": "^7.13.10"
+    "@jorgeecaraballoveliz/components-library": "^1.0.4",
+    "lit": "^3.1.2"
   }
 }

@@ -1,0 +1,110 @@
+@import 'global.css';
+@import 'layout.css';
+
+body {
+  background-color: var(--neutral-color);
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#content main {
+    padding: 1rem;
+}
+
+#main-sidebar {
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+#main-sidebar ul {
+    padding: 1rem 0;
+    border-right: 1px solid var(--primary-light-color);
+    position: sticky;
+    top: 120px;
+}
+
+#main-sidebar ul li {
+    padding: 1rem 0;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+/* TYPOGRAPHY */
+.guide-typography {
+    align-items: center;
+}
+
+.guide-typography > div {
+    padding: 1rem;
+}
+
+.guide-typography__example {
+    min-width: 400px;
+}
+
+.guide-typography__properties {
+    min-width: 140px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* COLORS */
+
+card-component {
+    --card-component-padding: 1rem;
+    --card-component-border-radius: 0.5rem;
+    --card-component-height: 27rem;
+}
+
+#colors {
+    card-component {
+        ul {
+            padding-top: 10rem;
+            border-radius: 0.5rem;
+
+            li {
+                padding-top: 0.5rem;
+            }
+        }
+
+        &.primary-color {
+            --card-component-color: var(--primary-color);
+        }
+
+        &.secondary-color {
+            --card-component-color: var(--secondary-color);
+        }
+
+        &.neutral-color {
+            --card-component-color: var(--neutral-color);
+        }
+
+        &.warning-color {
+            --card-component-color: var(--warning-color);
+        }
+
+        &.info-color {
+            --card-component-color: var(--info-color);
+        }
+
+        &.text-color {
+            --card-component-color: var(--text-color);
+        }
+    }
+}
+
+/* CONTENT */
+#content-elements card-component {
+    --card-component-color: var(--secondary-color);
+}
+
+.col-style {
+    border: 1px solid var(--primary-light-color);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
